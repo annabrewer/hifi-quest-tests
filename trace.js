@@ -3,7 +3,7 @@ Window.location = "hifi://engine-dev/21.9769,-9.70012,-21.5019/0,0.891658,0,0.45
 
 var startTime = 5;
 var endTime = startTime + 10;
-var outputFile = "trace.json.gz";
+var outputFile = "/sdcard/Documents/trace.json.gz";
 
 Script.setTimeout(function () {
     var loggingRules = ""
