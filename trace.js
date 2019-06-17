@@ -3,16 +3,20 @@ Window.location = "hifi://engine-dev/21.9769,-9.70012,-21.5019/0,0.891658,0,0.45
 
 var startTime = 5;
 var endTime = startTime + 30;
-var outputFile = "/sdcard/Documents/trace-longer.json.gz";
+var outputFile = "/sdcard/Documents/trace-all.json.gz";
 
 Script.setTimeout(function () {
     var loggingRules = ""
-        + "trace.*=false\n"
-        //+ "trace.render.debug=true\n"
+        + "trace.*=true\n"
+        /*
+        + "trace.render.debug=true\n"
+        + "trace.render=true\n"
+        + "trace.render.detail=true\n"
+        + "trace.baker=true\n"
         //+ "trace.app.debug=true\n"
         + "trace.app=true\n"
         + "trace.simulation.physics=true\n"
-        + "";
+        + "";*/
     Test.startTracing(loggingRules);
 }, startTime * 1000);
 
