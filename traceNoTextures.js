@@ -4,7 +4,7 @@ Window.location = "hifi://engine-dev/21.9769,-9.70012,-21.5019/0,0.891658,0,0.45
 Render.getConfig("RenderMainView").getConfig("LightingModel")["enableMaterialTexturing"] = false;
 
 var startTime = 30;
-var endTime = startTime + 30;
+var endTime = startTime + 20;
 var outputFile = "/sdcard/Documents/trace-no-textures.json.gz";
 
 Script.setTimeout(function () {
