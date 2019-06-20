@@ -5,7 +5,7 @@ Render.getConfig("RenderMainView").getConfig("LightingModel")["enableMaterialTex
 
 var startTime = 30;
 var endTime = startTime + 30;
-var outputFile = "/sdcard/Documents/trace-all.json.gz";
+var outputFile = "/sdcard/Documents/trace-no-textures.json.gz";
 
 Script.setTimeout(function () {
     var loggingRules = ""
